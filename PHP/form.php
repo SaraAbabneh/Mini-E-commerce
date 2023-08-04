@@ -2,6 +2,7 @@
 ?>
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Add a New Product</title>
     <style>
@@ -10,13 +11,15 @@
         }
 
         .h2_pro {
-            text-align: center;
+            text-align: left;
             margin-top: 20px;
+            margin-left:70px;
         }
 
         .form_pro {
-            width: 30%;
-            margin: 50px auto;
+            /* width: 30%; */
+            text-align: left;
+            margin: 50px;
             padding: 50px;
             border: 1px solid #ccc;
             border-radius: 5px;
@@ -40,7 +43,7 @@
             border-radius: 4px;
         }
 
-        .form_pro textarea.form-control {
+        .form_pro textarea .form-control {
             resize: vertical;
         }
 
@@ -60,30 +63,35 @@
         }
     </style>
 </head>
+
 <body>
+    <div class ="left">
     <h2 class="h2_pro">Add a New Product</h2>
-    <form action="process_product.php" class="w-25 mx-auto mt-5 form_pro" method="post" enctype="multipart/form-data">
+    <form action="process_product.php" class="w-25 mt-5 form_pro" method="post" enctype="multipart/form-data">
         <div class="form-group">
             <label for="product_name">Product Name:</label>
-            <input type="text" id="product_name" class="form-control" name="product_name" required>
+            <input type="text" id="product_name" class="form-control" name="product_name" Required>
         </div>
 
         <div class="form-group">
             <label for="product_image">Product Image:</label>
-            <input type="file" id="product_image" class="form-control" name="product_image" required>
+            <input type="file" id="product_image" class="form-control" name="product_image" Required>
         </div>
 
         <div class="form-group">
             <label for="product_description">Product Description:</label>
-            <textarea id="product_description" class="form-control" name="product_description" rows="4" cols="50" required></textarea>
+            <textarea id="product_description" class="form-control" name="product_description" rows="4" cols="50"
+                required></textarea>
         </div>
 
         <div class="form-group">
             <label for="product_price">Product Price:</label>
-            <input type="number" id="product_price" class="form-control" name="product_price" step="0.01" required>
+            <input type="number" id="product_price" class="form-control" name="product_price" step="0.01" Required>
         </div>
 
         <button type="submit" value="Add Product" class="btn btn-primary">Add Product</button>
     </form>
+    </div>
 </body>
+
 </html>

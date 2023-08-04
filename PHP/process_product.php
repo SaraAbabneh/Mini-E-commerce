@@ -1,6 +1,6 @@
 <?php
 // Start the PHP session
-// session_start();
+session_start();
 
 if (!isset($_SESSION['products'])) {
     $_SESSION['products'] = array();
@@ -35,31 +35,31 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     addProduct($productName, $productImageName, $productDescription, $productPrice);
 
     // Redirect to a different page after processing the form data
-    header('Location: index.php');
+    header('Location: display_products.php');
     exit();
 }
 
 // Output the table only after processing the form data and adding products
-echo "<table class=table table-striped>";
-echo "<thead>";
-        echo "<tr>";
-        echo "<th>product_name</th>";
-        echo "<th>product_description</th>";
-        echo "<th>product_price</th>";
-        echo "<th>product_image</th>";
-        echo "</tr>";
-    echo "</thead>";
-    echo "<tbody>";
-        foreach ($_SESSION['products'] as $product) {
-            echo '<tr>';
-            echo '<td>'.$product['name'].'</td>'; // Fixed the variable name here
-            echo '<td>'.$product['desc'].'</td>'; // Fixed the variable name here
-            echo '<td>'.$product['price'].'</td>'; // Fixed the variable name here
-            echo '<td><img class="product-image" src="../image/'.trim($product['img'], 'uploads/') . '" width="100px" height="100px" alt="' . $product['name'] . '"></td>';
-            echo '</tr>';
-        }
-      echo "</tbody>";
+// echo "<table class=table table-striped>";
+// echo "<thead>";
+//         echo "<tr>";
+//         echo "<th>product_name</th>";
+//         echo "<th>product_description</th>";
+//         echo "<th>product_price</th>";
+//         echo "<th>product_image</th>";
+//         echo "</tr>";
+//     echo "</thead>";
+//     echo "<tbody>";
+//         foreach ($_SESSION['products'] as $product) {
+//             echo '<tr>';
+//             echo '<td>'.$product['name'].'</td>'; // Fixed the variable name here
+//             echo '<td>'.$product['desc'].'</td>'; // Fixed the variable name here
+//             echo '<td>'.$product['price'].'</td>'; // Fixed the variable name here
+//             echo '<td><img class="product-image" src="../image/'.trim($product['img'], 'uploads/') . '" width="100px" height="100px" alt="' . $product['name'] . '"></td>';
+//             echo '</tr>';
+//         }
+//       echo "</tbody>";
 
 
-echo "</table>";
+// echo "</table>";
 ?>

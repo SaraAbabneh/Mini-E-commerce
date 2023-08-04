@@ -33,24 +33,15 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="../image/bg-1.jpg" alt="Los Angeles" >
-        <div class="carousel-caption">
-          <h3>Los Angeles</h3>
-          <p>We had such a great time in LA!</p>
-        </div>
+      
       </div>
       <div class="carousel-item">
         <img src="../image/bg-2.jpg" alt="Chicago" >
-        <div class="carousel-caption">
-          <h3>Chicago</h3>
-          <p>Thank you, Chicago!</p>
-        </div>
+        
       </div>
       <div class="carousel-item">
         <img src="../image/bg-3.jpg" alt="New York" >
-        <div class="carousel-caption">
-          <h3>New York</h3>
-          <p>We love the Big Apple!</p>
-        </div>
+    
       </div>
     </div>
     <a class="carousel-control-prev" href="#demo" data-slide="prev">
