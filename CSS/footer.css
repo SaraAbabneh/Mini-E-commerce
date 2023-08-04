@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+/* ... Add your header styles here ... */
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer .row {
+    margin: 0;
+}
+
+footer .col-3 {
+    padding: 0;
+}
+
+footer .col-3 ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .col-3 li {
+    margin-bottom: 10px;
+}
+
+footer .col-3 i {
+    margin-right: 10px;
+    color: #fff;
+    font-size: 18px;
+}
+
+footer .col-3 span {
+    vertical-align: middle;
+}
+
+footer .col-3 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .col-3 a:hover {
+    color: #ddd;
+}
+
+footer .bg-success {
+    background-color: #28a745;
+}
+
+footer .bg-info {
+    background-color: #17a2b8;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer .list-unstyled {
+    padding-left: 0;
+}
+
+footer .list-unstyled li {
+    margin-bottom: 10px;
+}
+
+footer .d-inline {
+    display: inline-block;
+    margin-right: 10px;
+}

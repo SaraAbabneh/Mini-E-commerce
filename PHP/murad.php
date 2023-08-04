@@ -54,15 +54,15 @@ print_r($uniqueArray);
 
 
 
-// echo "<table>";
-// foreach ($_SESSION["cards"] as $value) {
-//     echo "<tr>";
-//     echo "<td>$value[0]</td>"; 
-//     echo "<td>$value[1]</td>"; 
-//     echo "<td>";
-//     echo"$value[2]";
-//     echo "</td>"; 
-//     echo "<td>$value[3]</td>"; 
-//     echo "</tr>";
-// }
-// echo "</table>";
+echo "<table>";
+foreach ($_SESSION["cards"] as $value) {
+    echo "<tr>";
+    echo "<td>$value[0]</td>"; 
+    echo "<td>$value[1]</td>"; 
+    echo "<td>";
+    echo"$value[2]";
+    echo "</td>"; 
+    echo "<td>$value[3]</td>"; 
+    echo "</tr>";
+}
+echo "</table>";

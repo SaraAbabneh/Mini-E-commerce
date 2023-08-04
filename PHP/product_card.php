@@ -51,7 +51,7 @@ session_start();
         echo '</div>';
 
         // echo($product['img']);
-        echo (trim($product['img'], 'uploads/'));
+        // echo (trim($product['img'], 'uploads/'));
     }
     ?>
 </body>
