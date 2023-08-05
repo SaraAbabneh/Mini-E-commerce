@@ -12,39 +12,34 @@ footer {
     margin-top: 15px;
 }
 
-footer .row {
-    margin: 0;
-}
-
-footer .col-3 {
-    padding: 0;
-}
-
-footer .col-3 ul {
+footer .col-4 ul {
     list-style: none;
-    padding: 0;
+
 }
 
-footer .col-3 li {
+footer .col-4 li {
     margin-bottom: 10px;
+    margin-right: 5px;
+  
 }
 
-footer .col-3 svg{
+footer .col-4 svg{
     color: #fff;
     font-size: 18px;
+  
 }
 
-footer .col-3 span {
+footer .col-4 span {
     vertical-align: middle;
     font-size: 16px;
 }
 
-footer .col-3 a {
+footer .col-4 a {
     color: #fff;
     text-decoration: none;
 }
 
-footer .col-3 a:hover {
+footer .col-4 a:hover {
     color: #ddd;
 }
 
@@ -60,21 +55,22 @@ footer p {
     margin: 0;
 }
 
-footer .list-unstyled {
-    padding-left: 0;
-}
 
 footer .list-unstyled li {
     margin-bottom: 10px;
+    display:block;
 }
 
-footer .d-inline {
-    display: inline-block;
-    margin-right: 10px;
+footer .social li{
+    display:inline-block;
+    margin-right: 5px;
 }
+
+
 
 @media screen and (max-width: 481px) {
     body {
         font-size: 60%;
+    
     }
 }

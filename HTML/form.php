@@ -10,19 +10,19 @@
         }
         .left{
             width: 100%;
-            margin: 0 1rem;
         }
 
         .h2_pro {
             text-align: left;
             margin-top: 20px;
             margin-left: 70px;
+            font-size: 2em;
         }
 
         .form_pro {
         
             text-align: left;
-            margin: 50px;
+            margin: 10px 50px;
             padding: 50px;
             border: 1px solid #ccc;
             border-radius: 5px;
@@ -38,7 +38,7 @@
             display: block;
             font-weight: bold;
             margin-bottom: 5px;
-            font-size: 1.2rem;
+            font-size: 1rem;
         }
 
         .form_pro .formcontrol {
@@ -61,6 +61,7 @@
             border: none;
             border-radius: 44px;
             cursor: pointer;
+            font-size: 1.4em;
         }
 
         .form_pro .btn-primary:hover {
@@ -69,10 +70,13 @@
 
         /* Media query for small screens */
         @media (max-width: 481px) {
-            .form_pro {
-  
-                font-size: 50%;
-             
+            .form_pro label {
+                font-size: 95%;     
+            }
+
+            .form_pro{
+                padding: 13px;
+                margin: 10px 21px;
             }
         }
 

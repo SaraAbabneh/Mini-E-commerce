@@ -63,12 +63,12 @@
 
 </html>
 <script>
-  let is_logged_in = <?php echo $_SESSION['is_logged_in'] ? 'true' : 'false'; ?>;
+    let is_logged_in = <?php echo $_SESSION['is_logged_in'] ? 'true' : 'false'; ?>;
 
-  if (is_logged_in) {
-    let logout = document.getElementById('logout');
-    let a_tage = document.getElementById('a_tage');
-    logout.innerHTML = 'Logout';
-    a_tage.href = "logout_process.php";
-  }
+    if (is_logged_in) {
+        let logout = document.getElementById('logout');
+        let a_tage = document.getElementById('a_tage');
+        logout.innerHTML = 'Logout';
+        a_tage.href = "logout_process.php";
+    }
 </script>

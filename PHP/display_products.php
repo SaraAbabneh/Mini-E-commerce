@@ -5,8 +5,8 @@ session_start();
 include_once('../HTML/navbar.php');
 include_once('..\HTML\form.php');
 
-echo"<div style='margin-left: 50px; margin-right: 50px; margin-top:70px;'>";
-echo "<table class='table table-striped' id='tabel'>";
+echo"<div id='tabel-div'>";
+echo "<table class='table table-striped' id='tabel' style= 'margin-right: 12px;'>";
 echo "<thead>";
 echo "<tr>";
 echo "<th>Product Name</th>";
@@ -19,22 +19,22 @@ echo "</thead>";
 echo "<tbody>";
 
 if (isset($_SESSION['products']) && is_array($_SESSION['products'])) {
-    foreach ($_SESSION['products'] as $product) {
-        echo '<tr>';
-        echo '<td>' . $product['name'] . '</td>';
-        echo '<td>' . $product['desc'] . '</td>';
-        echo '<td>' . $product['price'] . '</td>';
-        echo '<td><img class="product-image" src="../image/' .trim($product['img'], 'uploads/') . '" width="100px" height="100px" alt="' . $product['name'] . '"></td>';
-        echo '<td><span><i class="fa fa-plus" aria-hidden="true"></i> Add to cart </span></td>';
-        echo '</tr>';
-    }
+  foreach ($_SESSION['products'] as $product) {
+    echo '<tr>';
+    echo '<td>' . $product['name'] . '</td>';
+    echo '<td>' . $product['desc'] . '</td>';
+    echo '<td>' . $product['price'] . '</td>';
+    echo '<td><img class="product-image" src="../image/' . trim($product['img'], 'uploads/') . '" width="100px" height="100px" alt="' . $product['name'] . '"></td>';
+    echo '<td><span><i class="fa fa-plus" aria-hidden="true"></i> Add to cart </span></td>';
+    echo '</tr>';
+  }
 }
 
 echo "</tbody>";
 echo "</table>";
 echo "</div>";
 
-echo "<a href='product_card.php' style='margin-left:25%;'><button style='width: 50%; padding: 10px;  background: #007BFF; padding: 10px; border:none ;border-radius: 4px; margin-top: 20px;color: #fff;'>View card project </button></a>";
+echo "<a href='product_card.php' style='margin-left:25%;'><button style='width: 50%; padding: 10px;  background: #007BFF; padding: 10px; border:none ;border-radius: 20px; margin-top: 20px;color: #fff; font-size: 1.4em;'>View card project </button></a>";
 
 
 
@@ -54,7 +54,36 @@ require_once('../HTML/Footer.php');
   window.location.hash = '#tabel';
 </script>
 
-<!-- <script>
-  // JavaScript to scroll to the #tabel anchor
-//   window.location.hash = '#tabel';
-</script> -->
+<style>
+  #tabel-div{
+    margin-left: 50px; 
+    margin-right: 50px;
+     margin-top:70px;
+  }
+ 
+  @media screen and (max-width: 481px) {
+ 
+    #tabel-div {
+      margin-left: 2px;
+      margin-right: 9px;
+      margin-top:0px;
+      padding: 21px;
+    }
+
+    .table td {
+      padding: 0rem;
+      vertical-align: middle;
+    }
+    img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .table th {
+    padding: 0rem;
+  }
+ 
+  }
+
+ 
+</style>

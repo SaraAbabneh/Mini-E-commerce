@@ -32,15 +32,18 @@ require_once('../HTML/slider.php');
         .product-name {
             font-weight: bold;
             margin-bottom: 5px;
+            font-size: 1rem;
         }
 
         .product-description {
             margin-bottom: 10px;
+            font-size: 1rem;
         }
 
         .product-price {
             color: green;
             font-weight: bold;
+            font-size: 1rem;
         }
     </style>
 </head>
@@ -67,7 +70,7 @@ require_once('../HTML/slider.php');
     echo'<br>';
     echo'<br>';
     echo'<br>';
-    echo "<a href='display_products.php' style='margin-left:25%;'><button style='width: 50%; padding: 10px;  background: #007BFF; padding: 10px; border:none ;border-radius: 4px; margin-top: 20px;color: #fff;'>Home</button></a>";
+    echo "<a href='display_products.php' style='margin-left:25%;'><button style='width: 50%; padding: 10px;  background: #007BFF; padding: 10px; border:none ;border-radius: 4px; margin-top: 20px;color: #fff; font-size: 1rem;'>Home</button></a>";
     ?>
         
   
