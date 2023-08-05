@@ -1,5 +1,11 @@
 <?php
+//product_card.php
 session_start();
+require_once('../HTML/navbar.php');
+require_once('../HTML/slider.php');
+
+
+
 
 ?>
 <!DOCTYPE html>
@@ -57,3 +63,8 @@ session_start();
 </body>
 
 </html>
+
+<?php 
+require_once('../HTML/footer.php');
+
+?>

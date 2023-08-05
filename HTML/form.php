@@ -1,5 +1,4 @@
-<?php
-?>
+<!-- form.php -->
 <!DOCTYPE html>
 <html>
 

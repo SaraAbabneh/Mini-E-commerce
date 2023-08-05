@@ -1,4 +1,5 @@
 <!doctype html>
+<!-- login.php -->
 <html lang="en">
 
 <head>
@@ -14,7 +15,7 @@
 </head>
 
 <body>
-    <form action="#" class="needs-validation w-25 mx-auto mt-5" novalidate method="post">
+    <form action="..\PHP\login_process.php" class="needs-validation w-25 mx-auto mt-5" novalidate method="post">
         <div class="form-group content">              
             <input type="text" class="form-control" id="Username" name="Username" Required>
             <label for="Username">Username</label>
@@ -34,7 +35,7 @@
         <button type="submit" class="btn btn-primary">log in</button>
     </form>
 
-    <script>
+    <!-- <script>
        
         (function () {
             window.addEventListener('load', function () {
@@ -56,7 +57,7 @@
         })();
 
 
-    </script>
+    </script> -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

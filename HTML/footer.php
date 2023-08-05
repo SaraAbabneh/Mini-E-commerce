@@ -1,4 +1,5 @@
 <!doctype html>
+<!-- footer.php -->
 <html lang="en">
   <head>
     <title>Title</title>
@@ -38,7 +39,7 @@
                     <li ><a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa fa-home" aria-hidden="true"></i></a><span>Home</span></li>
                     <li><a href="http://" target="_blank" rel="noopener noreferrer"><i class="fas fa-heart"></i></a><span> wich list</span></li>
                     <li><a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa fa-cart-plus" aria-hidden="true"></i></a><span> Cart</span></li>
-                    <li><a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa fa-product-hunt" aria-hidden="true"></i></a><span>Product</span></li>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#dedede}</style><path d="M326.3 218.8c0 20.5-16.7 37.2-37.2 37.2h-70.3v-74.4h70.3c20.5 0 37.2 16.7 37.2 37.2zM504 256c0 137-111 248-248 248S8 393 8 256 119 8 256 8s248 111 248 248zm-128.1-37.2c0-47.9-38.9-86.8-86.8-86.8H169.2v248h49.6v-74.4h70.3c47.9 0 86.8-38.9 86.8-86.8z"/></svg></a><span>Product</span></li>
 
                 </ul>
             </div>

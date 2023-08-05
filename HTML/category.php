@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+<!-- category.php -->
 
 <head>
     <title>Title</title>
@@ -27,8 +28,7 @@
             background-color: blue;
             width: 50%;
             margin: 20px;
-            padding: 20px;
-            background-color: blue;
+            padding: 20px; 
         }
     </style>
 </head>

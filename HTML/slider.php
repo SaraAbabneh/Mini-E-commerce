@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+<!-- slider.php -->
 
 <head>
   <title>Title</title>
@@ -10,48 +11,48 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <style>
-  /* Make the image fully responsive */
-  .carousel-inner img {
-    width: 100%;
-    height: 100%;
-  }
-  #demo{
-    width: 100%;
-    height: 10%;
-  }
+  <style>
+    /* Make the image fully responsive */
+    .d-block {
+      height: 400px;
+      overflow: hidden;
+    }
+
+    .d-block img {
+      object-fit: cover;
+
+    }
   </style>
 </head>
 
 <body>
-  <div id="demo" class="carousel slide" data-ride="carousel">
-    <ul class="carousel-indicators">
-      <li data-target="#demo" data-slide-to="0" class="active"></li>
-      <li data-target="#demo" data-slide-to="1"></li>
-      <li data-target="#demo" data-slide-to="2"></li>
-    </ul>
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="../image/bg-1.jpg" alt="Los Angeles" >
-      
+        <img src="../image/bg-1.jpg" class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item">
-        <img src="../image/bg-2.jpg" alt="Chicago" >
-        
+        <img src="../image/bg-2.jpg" class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item">
-        <img src="../image/bg-3.jpg" alt="New York" >
-    
+        <img src="../image/bg-3.jpg" class="d-block w-100" alt="...">
       </div>
     </div>
-    <a class="carousel-control-prev" href="#demo" data-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </a>
-    <a class="carousel-control-next" href="#demo" data-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </a>
+    <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </button>
   </div>
-
 
 
   <!-- Optional JavaScript -->

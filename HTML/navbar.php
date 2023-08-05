@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- navbar.php -->
 
 <head>
     <title>Title</title>
@@ -7,6 +8,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#00D4FF">
+
+    <!-- icon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -23,21 +27,22 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="..\PHP\index.php">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Product</a>
+                    <a class="nav-link" href="..\PHP\display_products.php">Product</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Cart</a>
+                    <a class="nav-link" href="#"><i class="fa fa-shopping-cart" aria-hidden="true" style="color:white";></i></i></a>
                 </li>
             </ul>
             <form class="form-inline ml-auto" action="/">
                 <input class="form-control mr-sm-2" type="text" placeholder="Search">
                 <button class="btn btn-success" type="submit">Search</button>
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                    <span class="login ml-1" style="color: white;">Login</span>
+                <a id="a_tage" href="..\HTML\login.php" target="_blank" rel="noopener noreferrer">
+                    <span id="logout" class="login  ml-1" style="color: white;">Login</span>
                 </a>
+
             </form>
         </div>
     </nav>
