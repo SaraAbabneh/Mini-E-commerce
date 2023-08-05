@@ -1,6 +1,16 @@
-:root {
+/* :root {
     --labelcoloer: rgb(40, 36, 36);
     --focuscolor: darkorange;
+}
+#login_form {
+    background: -webkit-linear-gradient(top, #7579ff, #b224ef);
+    width: 60%;
+   
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    margin: auto;
+    margin-top:10rem ;
 }
 
 .content {
@@ -34,6 +44,104 @@
     top: -3em;
     font-size: 1rem;
     color: var(--focuscolor);
+} */
+
+
+:root {
+    --labelcolor: white;
+    --focuscolor: white;
 }
 
+.limiter {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#login_form {
+    background: linear-gradient(to top, #7579ff, #b224ef);
+    width: 60%;
+    padding: 55px 55px 37px 55px;
+    border-radius: 10px;
+    overflow: hidden;
+    color: white;
+}
+
+.content {
+    position: relative;
+}
+
+.content label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 1rem;
+    color: var(--labelcolor);
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.content input {
+    width: 21rem;
+    padding: 2rem 2.5rem;
+    margin-bottom: 40px;
+    border: none;
+    
+    border-bottom: 2px solid #151414;
+    outline: none;
+    background: linear-gradient(to bottom, #7579ff, #b224ef); /* Gradient background */
+}
+.content input:focus ~label,
+.content input:valid ~label {
+    left: 0;
+    top: -3em;
+    font-size: 1rem;
+    color: var(--focuscolor);
+}
+
+button.btn-primary {
+    border-radius: 8px;
+    background-color: #AE29F0;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    display: block;
+    margin: 0 auto;
+    border: none;
+}
+.form-logo {
+    font-size: 60px; 
+    color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 20px auto;
+  }
+  .form-title {
+    font-family: Poppins-Medium;
+    font-size: 30px;
+    color: #7579ff;
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+    position: absolute;
+    top: 31%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
 

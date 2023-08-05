@@ -9,31 +9,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+       
     <link rel="stylesheet" href="../CSS/login.css">
 </head>
 
 <body>
-    <form action="..\PHP\login_process.php" class="needs-validation w-25 mx-auto mt-5" novalidate method="post">
-        <div class="form-group content">              
-            <input type="text" class="form-control" id="Username" name="Username" Required>
-            <label for="Username">Username</label>
-            <div class="invalid-feedback">Please fill out this field.</div>
+    <div class="limiter">
+        <div class="container">
+            <div id="login_form">
+                <form action="..\PHP\login_process.php" class="needs-validation " method="post">
+                    <span class="form-logo">
+                        <i class="zmdi zmdi-landscape"></i>
+                    </span>
+                    <span class="form-title">
+                        Log in
+                    </span>
+                    <div class="content">
+                        <input  type="text" id="Username" name="Username" Required>
+                        <label for="Username">Username</label>
+                    </div>
+
+                    <div class="content">
+                        <input  type="password" id="Password" name="Password" required>
+                        <label for="Password">Password</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input  id="ckb1" type="checkbox" name="remember-me">
+                        <label  for="ckb1">
+                            Remember me
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">log in</button>
+                </form>
+            </div>
         </div>
-        <div class="form-group content">
-            <input type="password" class="form-control" id="Password" name="Password"
-                required>
-                <label for="Password">Password</label>
-            <div class="invalid-feedback">Please fill out this field.</div>
-        </div>
-        <div class="form-group form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" type="checkbox" name="remember" Required> Remember me
-            </label>
-        </div>
-        <button type="submit" class="btn btn-primary">log in</button>
-    </form>
+    </div>
+
 
     <!-- <script>
        
