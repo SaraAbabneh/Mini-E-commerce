@@ -5,7 +5,7 @@ session_start();
 include_once('../HTML/navbar.php');
 include_once('..\HTML\form.php');
 
-echo"<div id='tabel-div'>";
+echo "<div id='tabel-div'>";
 echo "<table class='table table-striped' id='tabel' style= 'margin-right: 12px;'>";
 echo "<thead>";
 echo "<tr>";
@@ -25,7 +25,7 @@ if (isset($_SESSION['products']) && is_array($_SESSION['products'])) {
     echo '<td>' . $product['desc'] . '</td>';
     echo '<td>' . $product['price'] . '</td>';
     echo '<td><img class="product-image" src="../image/' . trim($product['img'], 'uploads/') . '" width="100px" height="100px" alt="' . $product['name'] . '"></td>';
-    echo '<td><span><i class="fa fa-plus" aria-hidden="true"></i> Add to cart </span></td>';
+    echo '<td><button><span><i class="add_cart fa fa-plus" aria-hidden="true"></i> Add to cart </span></button></td>';
     echo '</tr>';
   }
 }
@@ -52,21 +52,23 @@ require_once('../HTML/Footer.php');
   }
 
   window.location.hash = '#tabel';
+
+  
 </script>
 
 <style>
-  #tabel-div{
-    margin-left: 50px; 
+  #tabel-div {
+    margin-left: 50px;
     margin-right: 50px;
-     margin-top:70px;
+    margin-top: 70px;
   }
- 
+
   @media screen and (max-width: 481px) {
- 
+
     #tabel-div {
       margin-left: 2px;
       margin-right: 9px;
-      margin-top:0px;
+      margin-top: 0px;
       padding: 21px;
     }
 
@@ -74,16 +76,15 @@ require_once('../HTML/Footer.php');
       padding: 0rem;
       vertical-align: middle;
     }
+
     img {
-    width: 50px;
-    height: 50px;
-  }
+      width: 50px;
+      height: 50px;
+    }
 
-  .table th {
-    padding: 0rem;
-  }
- 
-  }
+    .table th {
+      padding: 0rem;
+    }
 
- 
+  }
 </style>

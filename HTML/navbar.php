@@ -19,7 +19,7 @@
 
 <body>
     <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
-        <a class="navbar-brand" href="#">Logo</a>
+        <a class="navbar-brand"><img src='..\image\Logo.png'width=70px style='border-radius:180px'></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -27,7 +27,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="..\PHP\index.php">Home</a>
+                    <a class="nav-link" href="..\PHP\display_products.php">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="..\PHP\product_card.php">Product</a>
