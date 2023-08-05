@@ -3,7 +3,7 @@
 session_start();
 
 
-// session_destroy();
+session_destroy();
 $_SESSION['is_logged_in'] = false;
 
 header('Location:index.php');

@@ -5,13 +5,15 @@ session_start();
 include_once('../HTML/navbar.php');
 include_once('..\HTML\form.php');
 
-echo "<table class='table table-striped mx-5' id='tabel'>";
+echo"<div style='margin-left: 50px; margin-right: 50px; margin-top:70px;'>";
+echo "<table class='table table-striped' id='tabel'>";
 echo "<thead>";
 echo "<tr>";
 echo "<th>Product Name</th>";
 echo "<th>Product Description</th>";
 echo "<th>Product Price</th>";
 echo "<th>Product Image</th>";
+echo "<th></th>";
 echo "</tr>";
 echo "</thead>";
 echo "<tbody>";
@@ -30,6 +32,12 @@ if (isset($_SESSION['products']) && is_array($_SESSION['products'])) {
 
 echo "</tbody>";
 echo "</table>";
+echo "</div>";
+
+echo "<a href='product_card.php' style='margin-left:25%;'><button style='width: 50%; padding: 10px;  background: #007BFF; padding: 10px; border:none ;border-radius: 4px; margin-top: 20px;color: #fff;'>View card project </button></a>";
+
+
+
 
 require_once('../HTML/Footer.php');
 ?>

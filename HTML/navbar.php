@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand bg-dark navbar-dark sticky-top">
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
         <a class="navbar-brand" href="#">Logo</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,10 +30,11 @@
                     <a class="nav-link" href="..\PHP\index.php">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="..\PHP\display_products.php">Product</a>
+                    <a class="nav-link" href="..\PHP\product_card.php">Product</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fa fa-shopping-cart" aria-hidden="true" style="color:white";></i></i></a>
+                    <a class="nav-link a_tage" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"
+                            style="color:white;"></i></a>
                 </li>
             </ul>
             <form class="form-inline ml-auto" action="/">
@@ -42,7 +43,6 @@
                 <a id="a_tage" href="..\HTML\login.php" target="_blank" rel="noopener noreferrer">
                     <span id="logout" class="login  ml-1" style="color: white;">Login</span>
                 </a>
-
             </form>
         </div>
     </nav>
@@ -62,3 +62,13 @@
 </body>
 
 </html>
+<script>
+  let is_logged_in = <?php echo $_SESSION['is_logged_in'] ? 'true' : 'false'; ?>;
+
+  if (is_logged_in) {
+    let logout = document.getElementById('logout');
+    let a_tage = document.getElementById('a_tage');
+    logout.innerHTML = 'Logout';
+    a_tage.href = "logout_process.php";
+  }
+</script>

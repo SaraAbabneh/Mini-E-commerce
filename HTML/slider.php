@@ -22,6 +22,10 @@
       object-fit: cover;
 
     }
+    .carousel-control-next{
+      opacity: 0;
+      width: 0;
+    }
   </style>
 </head>
 
@@ -44,11 +48,11 @@
         <img src="../image/bg-3.jpg" class="d-block w-100" alt="...">
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+    <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev" style="opacity: 0; width: 0;">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="sr-only">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+    <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next" style="opacity: 0; width: 0;">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </button>
