@@ -57,7 +57,7 @@ require_once('../HTML/slider.php');
             echo '<img class="product-image" src="../image/' . trim($product['img'], 'uploads/') . '" alt="' . $product['name'] . '">';
             echo '<div class="product-name">' . $product['name'] . '</div>';
             echo '<div class="product-description">' . $product['desc'] . '</div>';
-            echo '<div class="product-price">$' . $product['price'] . '</div>';
+            echo '<div class="product-price">' . $product['price'] . '</div>';
             echo '</div>';
 
             // echo($product['img']);
